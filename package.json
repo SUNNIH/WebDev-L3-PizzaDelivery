@@ -1,0 +1,30 @@
+{
+  "name": "oibsip-pizza-delivery",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OIBSIP Pizza Delivery Application - Phase 1",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "build:client": "npm run build --workspace=client",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:integration": "vitest --config tests/vitest.config.integration.js"
+  },
+  "engines": {
+    "node": "^24.0.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.7",
+    "vitest": "5.0.5",
+    "@vitest/coverage-v8": "5.0.5",
+    "mongodb-memory-server": "11.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
